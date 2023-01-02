@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    padding: 30px;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    font-size: 14px;
+    background-color: #212529;
+    color: #F8F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bouton{
+    display: flex;
+}
+.btn{
+    margin: 32px;
+    text-decoration: none;
+    padding: 25px 45px;
+    font-size: 20px;
+}
+.btn1{
+    background-color: #212529;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    color: #CCCCCC;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.btn1::after, .btn1::before {
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+.btn1:hover {
+    transform: translate(1px, 1px);
+    opacity: 0.8;
+}
+.titre{
+    background-color: #3AB1F3;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+.texte{
+    font-size: 18px;
+    margin: 30px 10% 0px 10%;
+    text-align: justify;
+}
+p{
+    text-align: center;
+    line-height: 2.0;
+}
+.add-cat{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-content: center;
+    gap: 10px;
+    margin-left: 40px;
+    padding: 15px;
+}
+.new_cat{
+    display: flex;
+    margin: 5px;
+    inline-size: 200px;
+    padding: 5px;
+}
+label{
+    margin: 5px;
+}
+.input{
+    margin:5px;
+    display: flex;
+    inline-size: 200px;
+    background-color: #212529;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    block-size: 50px;
+    justify-content: center;
+}
+.input:hover{
+    opacity: 0.8;
+}
+
