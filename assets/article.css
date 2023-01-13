@@ -47,6 +47,7 @@ textarea{
     border: none;
     display: flex;
     block-size: 100px;
+    outline: none;
 }
 .publish_answer_r{
     display: flex;

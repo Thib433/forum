@@ -6,7 +6,7 @@
   <body>
     <div class="Titre">
       Gestion du forum
-    </div>
+    </div> 
     <div class="add-cat">
         <form id="add-categorie" method="POST" class="control">
       

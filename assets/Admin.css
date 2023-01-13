@@ -20,6 +20,7 @@ body{
     padding: 5px;
     background-color: #CCCCCC;
     border: none;
+    outline: none;
 }
 label{
     margin: 5px;
