@@ -14,10 +14,10 @@ if (!empty($_POST['answer'])) {
  
 		if (strlen($message) < 150) {
 		
- 
+
 			// Ajout de l'utilisateur en base de données à cet endroit (exemple)
 
-			$answer_date = date('d/m/Y');
+			$answer_date = date('d-m-Y H:i:s');
 			//Insertion des nouvelles données
 			$bdd_f->query('INSERT INTO reponse (id_q, date_publication_r, contenu_r) VALUES ("'.$idOfTheQuestion.'", "'.$answer_date.'", "'.$message.'")');
 			$success = 1;

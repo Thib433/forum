@@ -11,7 +11,7 @@
 }
 .div-form2{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 24px 80px;
     flex-direction: row;
     gap:20px;
@@ -26,6 +26,7 @@
     color: #CCCCCC;
     justify-content: center;
     font-size: 18px;
+    cursor: pointer;
 }
 .validate:hover{
     opacity:0.8;
@@ -53,46 +54,50 @@ body{
     font-size: 18px;
 }
 textarea{
-    background-color: white;
+    background-color: #CCCCCC;
     padding : 15px;
     min-height: 200px;
-    border: 1px solid white;
+    border: 1px solid #CCCCCC;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    resize:none;
 }
 .question_head{
-    background-color:white;
+    background-color:#CCCCCC;
     padding : 15px;
     display: flex;
     font-size: 15px;
-    border: 1px solid white;
+    border: 1px solid #CCCCCC;
 }
 label{
     margin-bottom: 7px;
 }
 .selection{
-    
-  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     border-radius: 50%;
     width: 16px;
     height: 16px;
-  
     border: 2px solid #999;
-    transition: 0.2s all linear;
-    margin-right: 5px;
-  
-    position: relative;
-    top: 4px;
+    transition: 0.1s all linear;
+    text-align: center;
 }
 .selection:checked{
-    border: 3.5px solid white;
+    border: 4px solid white;
 }
 .global{
     display: flex;
-    flex-direction: row;
-    gap: 13px;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.div-form2{
+.whole{
+    display: flex;
+    flex-direction: row;
+    gap:18px;
+}
+.div-form3{
     display: flex;
     margin: 24px 80px;
     flex-direction: row;
@@ -101,5 +106,6 @@ label{
 .choice{
     margin-top: 5px;
 }
+
 
 

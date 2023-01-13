@@ -18,6 +18,7 @@ body{
 }
 .bouton{
     display: flex;
+    flex-wrap: wrap;
 }
 .btn{
     margin: 32px;
@@ -42,7 +43,6 @@ body{
     opacity: 0.8;
 }
 .titre{
-    background-color: #3AB1F3;
     padding: 20px;
     text-align: center;
     font-size: 30px;
@@ -60,36 +60,5 @@ p{
     text-align: center;
     line-height: 2.0;
 }
-.add-cat{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    align-content: center;
-    gap: 10px;
-    margin-left: 40px;
-    padding: 15px;
-}
-.new_cat{
-    display: flex;
-    margin: 5px;
-    inline-size: 200px;
-    padding: 5px;
-}
-label{
-    margin: 5px;
-}
-.input{
-    margin:5px;
-    display: flex;
-    inline-size: 200px;
-    background-color: #212529;
-    border: 1px solid white;
-    border-radius: 8px;
-    color: white;
-    block-size: 50px;
-    justify-content: center;
-}
-.input:hover{
-    opacity: 0.8;
-}
+
 
