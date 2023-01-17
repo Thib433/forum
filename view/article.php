@@ -56,7 +56,7 @@
         while($answer = $getAllOfThisQuestion->fetch()){
             ?>
                 <div class="card_a">
-                    <div class="card_a_head"><?= $answer['date_publication_r'];?></div>
+                    <div class="card_a_head"><?= $answer['date_heure_publication_r'];?></div>
                     <div class="card_a_contenu"><?= $answer['contenu_r'];?></div>
                 </div>
             <?php

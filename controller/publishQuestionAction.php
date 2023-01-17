@@ -11,10 +11,10 @@
                 $question_title=htmlspecialchars($_POST['title']);
             
                 $question_contenu=nl2br(htmlspecialchars($_POST['container']));
-                $question_date=date('d/m/Y');
+                $question_date=date('Y-m-d H:i');
                 //login auteur ???
                 
-                $bdd_f->query('INSERT INTO questions (titre, objet, Contenu, date_publication) VALUES ("'.$question_title.'", "'.$question_objet.'"," '.$question_contenu.'"," '.$question_date.'")');
+                $bdd_f->query('INSERT INTO questions (titre, objet, Contenu, date_heure_publication) VALUES ("'.$question_title.'", "'.$question_objet.'"," '.$question_contenu.'"," '.$question_date.'")');
                 
             }
             
