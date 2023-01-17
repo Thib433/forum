@@ -1,5 +1,6 @@
 <?php
-    require('../controller/publishQuestionAction.php');
+    require('../controller/publishQuestionAct.php');
+    require('../controller/controlRadio.php');
 ?>
 
 
@@ -19,31 +20,30 @@
 
     <div class="div-form">          
         <label class="form-label">Titre</label>
-        <input type="text" class="question_head" name="title" required>
+        <input type="text" class="question_head" name="title" placeholder="Titre" required>
     </div>
     <div class="div-form2">
         <div class="global">
             <?php
-            require('../model/requestRadio.php');
-            $rows = $values_cat->fetchAll();
+            include_once('../controller/controlRadio.php');
+            $rows = $essai->fetchAll();
             foreach ($rows as $row) {
                 $value = $row['id_cat'];
                 $label = $row['Nom'];
                 // générer du code HTML pour chaque bouton radio ici
-                echo '<input type="radio" name="radio_group" value="' . $value . '">' . $label . '<br>';
-
+                echo '<div class="whole">
+                <input type="radio" class="selection" name="radio_group" value="' . $value . '">' . $label . '
+                </div>';
+                
             }
-
             ?>
-            
-           
         </div>
     </div>  
     <div class="div-form">
         <label class="form-label">Question</label>
-        <textarea class="question" name="container" required></textarea>
+        <textarea placeholder="Votre question" class="question" name="container" required></textarea>
     </div>
-<div class="div-form2">
+<div class="div-form3">
     <a href="categorie.php?id_cat=<?= $question_objet;?>" class="back">Retour</a>
     <input type="submit" name="add-question" value="Ajouter la question" class="validate" required>
 </div>
