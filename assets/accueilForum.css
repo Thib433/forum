@@ -42,7 +42,6 @@ body{
     opacity: 0.8;
 }
 .titre{
-    background-color: #3AB1F3;
     padding: 20px;
     text-align: center;
     font-size: 30px;
@@ -88,6 +87,7 @@ label{
     color: white;
     block-size: 50px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .input:hover{
     opacity: 0.8;
