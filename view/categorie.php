@@ -4,7 +4,7 @@
 <?php
 require('../core/databaseAction.php');
 require('../controller/viewControlQuestion.php');
-require('../model/showAllCategorie.php');
+require('../controller/controlCategorie.php');
 
 
 
@@ -27,14 +27,15 @@ require('../model/showAllCategorie.php');
 <div class="Title"></div>
 
       <?php
-         $quest = $checkIfCategorieExists->fetchAll();
-         foreach($quest as $quest_row){
+        $quest = $questions->fetchAll();
+        foreach($quest as $quest_row){
             ?>
          
          <div class="card_space">
          
          <div class="card_base">
                <div class="card_head">
+                  <div class="titre"><?= $quest_row['pseudo_auteur'] ?></div>
                   <div class="titre"><?= $quest_row['titre'] ?></div>
                   <div class="date"><?= $quest_row['date_publication'] ?></div>
                </div>
@@ -48,7 +49,7 @@ require('../model/showAllCategorie.php');
          </div>
          </div>
          <?php
-               }
+            }
             ?>
         
 
