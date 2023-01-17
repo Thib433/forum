@@ -1,6 +1,8 @@
-const form = document.getElementById("reponse")
-form.addEventListener('submit', function(e){
-	e.preventDefault();
+let element =
+document.querySelector("#reponse");
+if (element){
+	element.addEventListener("submit", function(e){
+		e.preventDefault();
  
 	var data = new FormData(this);
  
@@ -20,11 +22,13 @@ form.addEventListener('submit', function(e){
 		}
 	};
  
-	xhr.open("POST", "../view/article.php", true);
+	xhr.open("POST", "../controller/js.php", true);
 	xhr.responseType = "json";
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(data);
 
 	return false;
 
-});
+})};
+
+	
