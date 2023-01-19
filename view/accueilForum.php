@@ -1,5 +1,5 @@
 <?php
-require('../model/showAllCategorie.php');
+include_once('../controller/controlCategorie.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,17 +11,18 @@ require('../model/showAllCategorie.php');
 </head>
 <body>
 <div class="titre">
-    Forum
+    Accueil 
 </div>
 <div class="texte">
-    <p>Bienvenue sur I Connect Forum <br> <br> Ce forum est destiné à tous nos utilisateurs que ce soit médecin ou patient pour discuter, s'entraider et trouver rapidement une solution à un problème.</p>
+    <p>Bienvenue sur I Connect Forum <br> Ce forum est destiné à tous nos utilisateurs que ce soit médecin ou patient pour discuter, s'entraider et trouver rapidement une solution à un problème.</p>
 </div>
 
 
 <div class="container">
     <div class="bouton">
-    <?php 
-        while($cat = $getAllCategories->fetch()){
+    <?php
+        
+        while($cat = $arg->fetch()){
             ?>
             <a href="categorie.php?id_cat=<?= $cat['id_cat'];?>" class="btn btn1" type="submit"> <?= $cat['Nom'];?></a>
             <?php

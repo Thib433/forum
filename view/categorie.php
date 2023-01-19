@@ -4,7 +4,7 @@
 <?php
 require('../core/databaseAction.php');
 require('../controller/viewControlQuestion.php');
-require('../model/showAllCategorie.php');
+require('../controller/controlCategorie.php');
 
 
 

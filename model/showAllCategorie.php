@@ -3,6 +3,25 @@ include_once('../core/databaseAction.php');
 
 
 
-$getAllCategories = $bdd_f->prepare('SELECT Nom, id_cat FROM f_categories');
-$getAllCategories->execute(array());
+
+class ShowCategorie {
+    private $db;
+  
+    public function __construct($bdd_f) {
+            $this->db = $bdd_f;
+    }
+  
+    public function getCategory() {
+        $show = $this->db->prepare('SELECT Nom, id_cat FROM f_categories');
+         $show->execute(array());    
+        
+        return $show;
+
+    }
+  
+    // other methods for inserting, updating, and deleting rows
+  }
+
+//$getAllCategories = $bdd_f->prepare('SELECT Nom, id_cat FROM f_categories');
+//$getAllCategories->execute(array());
 

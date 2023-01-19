@@ -2,8 +2,6 @@
     require('../controller/publishQuestionAct.php');
     require('../controller/controlRadio.php');
 ?>
-
-
 <!doctype html>
 <html>
 <body>
@@ -26,7 +24,7 @@
         <div class="global">
             <?php
             include_once('../controller/controlRadio.php');
-            $rows = $essai->fetchAll();
+            $rows = $essai1->fetchAll();
             foreach ($rows as $row) {
                 $value = $row['id_cat'];
                 $label = $row['Nom'];
@@ -34,7 +32,6 @@
                 echo '<div class="whole">
                 <input type="radio" class="selection" name="radio_group" value="' . $value . '">' . $label . '
                 </div>';
-                
             }
             ?>
         </div>
@@ -48,5 +45,4 @@
     <input type="submit" name="add-question" value="Ajouter la question" class="validate" required>
 </div>
 </form>
-
 </body>

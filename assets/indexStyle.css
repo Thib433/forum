@@ -145,6 +145,7 @@ label{
     justify-content: flex-start;
     margin: 15px 40px;
     border: 1px solid white;
+    border-radius: 7px;
     padding: 5px;
     gap: 45px;
 }
@@ -153,7 +154,12 @@ label{
     color:white;
     margin: 10px 5px;
 }
-.link:hover{
-    opacity:0.8;
+.linkA{
+    text-decoration: none;
+    color:skyblue;
+    margin: 10px 5px;
+}
+.link:hover:not(.active){
+    color:aquamarine;
 }
 
