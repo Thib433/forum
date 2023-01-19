@@ -13,8 +13,7 @@ class Question {
       $stmt->execute(array($id_cat));
             return $stmt;    
     }
-  
-    // other methods for inserting, updating, and deleting rows
+
   }
 
 

@@ -5,7 +5,6 @@ include_once('../core/databaseAction.php');
 include_once('../model/Admin.newCategorieValidate.php');
 
 
-
 if (isset($_POST['post-categorie'])) {
   $test=trim($_POST['name_categorie']);
   if (!empty ($test)) {
@@ -19,7 +18,7 @@ if (isset($_POST['post-categorie'])) {
         if ($cat8->rowCount() > 7) {
           $errorMsg = "Vous ne pouvez pas ajouter une nouvelle categorie, car le nombre maximal est déjà atteint";
         } else {
-      $categorie = new Categorie($_POST['name_categorie']);
+      $categorie = new Categorie($_POST['name_categorie'],$bdd_f);
       $categorie->save();
       $successMsg = "La catégorie a bien été ajoutée !";
       }

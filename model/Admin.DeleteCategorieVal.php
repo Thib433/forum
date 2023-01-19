@@ -3,14 +3,16 @@ include_once("../core/databaseAction.php");
 
 class Categoriesup {
   private $nom;
+  private $db;
 
-  public function __construct($nom) {
+  public function __construct($nom,$bdd_f) {
     $this->nom = htmlspecialchars($nom);
+    $this->db = $bdd_f;
   }
 
   public function supp() {
-    $bdd_f = new PDO('mysql:host=localhost; dbname=forum_iconnect; charset=utf8' ,'root', '');
-    $bdd_f->query('DELETE FROM f_categories WHERE Nom = "' . $this->nom . '"');
+    
+    $this->db->query('DELETE FROM f_categories WHERE Nom = "' . $this->nom . '"');
     // Supprimer la catégorie ici
   }
 }

@@ -14,7 +14,7 @@ if (isset($_POST['stop-categorie'])) {
       if ($testq->rowCount() == 0) {
         $errorMsgd = "Aucune catégorie ne comporte ce nom";
       } else {
-        $categorie = new Categoriesup($_POST['name_categorie_stop']);
+        $categorie = new Categoriesup($_POST['name_categorie_stop'],$bdd_f);
       $categorie->supp();
       $successMsgd = "La catégorie a bien été supprimée !";
     } 
