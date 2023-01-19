@@ -1,6 +1,7 @@
 <?php
     require('../controller/controlShowArticle.php');
     require('../controller/controlShowAllAnswer.php');
+
 ?>
 
 <!doctype html>

@@ -1,7 +1,7 @@
 <?php
 include_once('../model/showAllAnswerOfQuestionAction.php');
 include_once('../model/postAnswerAction.php');
-include_once('../view/Session.php');
+include_once('controlSession.php');
 include_once('../core/databaseAction.php');
 
 
