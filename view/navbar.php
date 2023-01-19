@@ -2,7 +2,7 @@
 require('../model/showAllCategorie.php')
 ?>
 <div class="navbar">
-    <a href="accueilForum.php" class="link" type="submit">Accueil</a>
+    <a href="accueilForum.php" class="linkA" type="submit">Accueil</a>
     <?php 
     while($cat = $getAllCategories->fetch()){
         ?>
