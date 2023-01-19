@@ -26,7 +26,7 @@
         <div class="global">
             <?php
             include_once('../controller/controlRadio.php');
-            $rows = $essai->fetchAll();
+            $rows = $essai1->fetchAll();
             foreach ($rows as $row) {
                 $value = $row['id_cat'];
                 $label = $row['Nom'];

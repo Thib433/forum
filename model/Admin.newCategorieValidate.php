@@ -1,14 +1,15 @@
 <?php
 class Categorie{
   private $nom;
+  private $db;
 
-  public function __construct($nom){
+  public function __construct($nom,$bdd_f){
     $this->nom = htmlspecialchars($nom);
+    $this->db = $bdd_f;
   }
-  public function save()
-  {
-    $bdd_f = new PDO('mysql:host=localhost; dbname=forum_iconnect; charset=utf8', 'root', '');
-    $bdd_f->query('INSERT INTO f_categories (Nom) VALUES ("' . $this->nom . '")');
+  public function save(){
+    
+    $this->db->query('INSERT INTO f_categories (Nom) VALUES ("' . $this->nom . '")');
     // Enregistrer la catégorie ici
   }
 

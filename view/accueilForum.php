@@ -1,5 +1,5 @@
 <?php
-require('../model/showAllCategorie.php');
+include_once('../controller/controlCategorie.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,8 +20,9 @@ require('../model/showAllCategorie.php');
 
 <div class="container">
     <div class="bouton">
-    <?php 
-        while($cat = $getAllCategories->fetch()){
+    <?php
+        
+        while($cat = $arg->fetch()){
             ?>
             <a href="categorie.php?id_cat=<?= $cat['id_cat'];?>" class="btn btn1" type="submit"> <?= $cat['Nom'];?></a>
             <?php

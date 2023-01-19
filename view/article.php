@@ -1,7 +1,7 @@
 <?php
-    require('../model/showArticleContentAction.php');
-    require('../controller/postAnswerAction.poo.php');
-    require('../model/showAllAnswerOfQuestionAction.php');
+require('../controller/controlShowArticle.php');
+require('../controller/controlShowAllAnswer.php');
+require('../controller/controlAnswer.php');
 ?>
 
 <!doctype html>
