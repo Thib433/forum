@@ -1,7 +1,7 @@
 <?php
 include_once('../core/databaseAction.php');
 include_once('../model/newQuestion.php');
-include('../view/Session.php');
+include('controlSession.php');
 
 
 

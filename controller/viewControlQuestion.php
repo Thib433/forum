@@ -1,7 +1,7 @@
 <?php
 
 include_once('../core/databaseAction.php');
-require('../view/Session.php');
+require('controlSession.php');
 include_once('../model/showAllQuestion.php');
 
 $question = new Question($bdd_f);
