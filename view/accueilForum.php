@@ -11,10 +11,10 @@ require('../model/showAllCategorie.php');
 </head>
 <body>
 <div class="titre">
-    Forum
+    Accueil
 </div>
 <div class="texte">
-    <p>Bienvenue sur I Connect Forum <br> <br> Ce forum est destiné à tous nos utilisateurs que ce soit médecin ou patient pour discuter, s'entraider et trouver rapidement une solution à un problème.</p>
+    <p>Bienvenue sur I Connect Forum <br> Ce forum est destiné à tous nos utilisateurs que ce soit médecin ou patient pour discuter, s'entraider et trouver rapidement une solution à un problème.</p>
 </div>
 
 
