@@ -1,35 +1,21 @@
 <?php
+//on inclut les fichiers dont on a besoin
+include_once('../core/databaseAction.php');
 
-require('../core/databaseAction.php');
+//On définit la class
+class ShowA{
+    //on définit les variables
+    private $db;
+    private $idOfTheQuestion;
 
-//Vérifier si lid de la question est rentrée dans l'url
-
-if (isset($_GET['id']) and !empty($_GET['id'])){
-
-    //Récupérer l'identifiant de la question
-    $idOfTheQuestion = $_GET['id'];
-    $checkIfQuestionExists = $bdd_f->prepare('SELECT id, titre, contenu, date_publication FROM questions WHERE id = ?');
-    $checkIfQuestionExists->execute(array($idOfTheQuestion));
-
-    if ($checkIfQuestionExists->rowCount() > 0){
-
-        //Récupérer toutes les datas de la question
-
-        $questionInfos = $checkIfQuestionExists->fetch();
-
-        //Stocker les datas de la question dans des variables propres
-
-        $question_title = $questionInfos['titre'];
-        $question_contenu = $questionInfos['contenu'];
-        $question_date_publication = $questionInfos['date_publication'];
-
-
-
-    }else{
-        $errorMsg="Aucune question n'a été trouvée";
+    public function __construct($db, $idOfTheQuestion){ //on définit la fonction construct pr construire les objets avec les variables comme paramètre
+        $this->db = $db;
+        $this->idOfTheQuestion = $idOfTheQuestion;
     }
 
-}else{
-
-    $errorMsg="Aucune question n'a été trouvée";
+    public function SelectQuestion(){ //fonction pr chercher les données de la table reponse pr les afficher
+        $recup=$this->db->prepare('SELECT id, titre, contenu, pseudo_auteur, date_publication FROM questions WHERE id = ?');
+        $recup->execute(array($this->idOfTheQuestion)); //on execute
+        return $recup;
+    }
 }
