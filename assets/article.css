@@ -48,6 +48,7 @@ textarea{
     display: flex;
     block-size: 100px;
     outline:none;
+    padding: 15px;
 }
 .publish_answer_r{
     display: flex;
@@ -124,6 +125,9 @@ textarea{
     margin: 10px 5px;
 }
 .link:hover:not(.active){
+    color:aquamarine;
+}
+.auteur{
     color:aquamarine;
 }
 

@@ -35,7 +35,7 @@ require('../controller/controlCategorie.php');
          
          <div class="card_base">
                <div class="card_head">
-                  <div class="titre"><?= $quest_row['pseudo_auteur'] ?></div>
+                  <div class="auteur"><?= $quest_row['pseudo_auteur'] ?></div>
                   <div class="titre"><?= $quest_row['titre'] ?></div>
                   <div class="date"><?= $quest_row['date_publication'] ?></div>
                </div>

@@ -58,7 +58,7 @@
     <div class="card">
     
             <div class="titre_et_date">
-                <div class="title"><?= $questionInfos['pseudo_auteur'];;?></div>
+                <div class="auteur"><?= $questionInfos['pseudo_auteur'];;?></div>
                 <div class="title"><?= $questionInfos['titre'];?></div>
                 <div class="date_publication"><?= $questionInfos['date_publication'];?></div>
             </div>
@@ -86,7 +86,7 @@
             ?>
                 <div class="card_a">
                     <div class="whole">
-                        <div class="card_a_head"><?= $answer['pseudo_auteur_r'];?></div>
+                        <div class="auteur"><?= $answer['pseudo_auteur_r'];?></div>
                         <div class="card_a_head"><?= $answer['date_publication_r'];?></div>
                     </div>
                     <div class="card_a_contenu"><?= $answer['contenu_r'];?></div>
