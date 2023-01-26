@@ -25,7 +25,7 @@ if(isset($_POST['answer'])) { //on stocker les données de la réponses dans des
 ?>
     <div class="card_a">
         <div class="whole">
-            <div class="card_a_head"><?= $auteur ?></div>
+            <div class="auteur"><?= $auteur ?></div>
             <div class="card_a_head"><?= $answer_date ?></div>
         </div>
         <div class="card_a_contenu"><?= $contenu_r ?></div>

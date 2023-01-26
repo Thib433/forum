@@ -10,11 +10,12 @@ body{
 }
 #pseudo{
     background-color:#CCCCCC;
-    padding : 10px 5px;
+    padding : 8px 4px;
     display: flex;
-    font-size: 15px;
+    font-size: 12px;
     outline: none;
-    inline-size: 250px;
+    inline-size: 200px;
+    border: none;
 }
 form{
     display: flex;

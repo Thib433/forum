@@ -48,8 +48,6 @@
    ?>
 </div>
 <div class="question_container">
-    
-    <div class="pres">Question : </div>
     <?php
 
         if ($checkIfQuestionExists->rowCount() > 0){
@@ -59,8 +57,10 @@
     
             <div class="titre_et_date">
                 <div class="auteur"><?= $questionInfos['pseudo_auteur'];;?></div>
-                <div class="title"><?= $questionInfos['titre'];?></div>
                 <div class="date_publication"><?= $questionInfos['date_publication'];?></div>
+            </div>
+            <div class="ti">
+                <div class="title"><?= $questionInfos['titre'];?></div>
             </div>
             <div class="contenu"><?= $questionInfos['contenu'];?></div>
 
@@ -68,12 +68,6 @@
     <div class="show_answer">
         <form class="form_group" method="POST" id="response-form" class="reponse">
             <label>Répondre :</label>
-            <?php if (isset($errorMsg)){ 
-                    echo '<p>' . $errorMsg . '</p>';
-                }elseif(isset($successMsg)){
-                    echo '<p>' . $successMsg . '</p>'; 
-                }
-                ?>
             <textarea name="answer" id="champ_rep" class="form_control" placeholder="Votre réponse" required></textarea> 
             <input type="submit" class="publish_answer_r" name="validate-rep" value="Publier" required ><span class='status'></input>
 

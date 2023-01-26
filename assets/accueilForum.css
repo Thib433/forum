@@ -20,6 +20,18 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
+.quitte{
+    background-color: #212529;
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    color: #CCCCCC;
+    border-radius: 5px;
+    margin: 32px;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
 .btn{
     margin: 32px;
     text-decoration: none;
@@ -31,7 +43,7 @@ body{
     border: 1px solid #CCCCCC;
     text-align: center;
     color: #CCCCCC;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: transform 0.3s ease;
 }
 .btn1::after, .btn1::before {

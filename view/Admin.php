@@ -12,8 +12,8 @@
       
             <label>Ajouter une categorie</label>
             <input type="text" class="new_cat" name="name_categorie" placeholder="Nom de la categorie" required></input>
-            <input type="submit" name="post-categorie" value="Ajouter la categorie"  class="input"></input>
-            <?php
+            <input type="submit" name="post-categorie" value="Ajouter"  class="input"></input>
+            <?php 
             require('../controller/Admin.NewCategorie.php');
             if (isset($errorMsg)){ 
               echo '<p>' . $errorMsg . '</p>';
@@ -27,7 +27,7 @@
         <form id="add-categorie" method="POST" class="control">
             <label>Supprimer une categorie</label>
             <input type="text" class="new_cat" name="name_categorie_stop" placeholder="Nom de la categorie" required></input>
-            <input type="submit" name="stop-categorie" value="Supprimer la categorie" class="input"></input>
+            <input type="submit" name="stop-categorie" value="Supprimer" class="input"></input>
             <?php
             require('../controller/Admin.DeleteCategorie.php');
             if (isset($errorMsgd)){ 

@@ -15,10 +15,13 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
+.ti{
+    padding-bottom: 5px ;
+}
 .card{
     display: flex;
     border: 1px solid white;
-    border-radius: 8px;
+    border-radius: 5px;
     flex-direction: column;
     gap:20px;
     padding: 20px;
@@ -28,7 +31,7 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 20px;
     margin-top: 10px;
 }
@@ -54,7 +57,7 @@ textarea{
     display: flex;
     background-color: #212529;
     border: 1px solid #CCCCCC;
-    border-radius: 8px;
+    border-radius: 5px;
     color: #CCCCCC;
     inline-size: 150px;
     justify-content: center;
@@ -70,7 +73,7 @@ textarea{
 }
 .card_a{
     border: 1px solid white;
-    border-radius: 8px;
+    border-radius: 5px;
     display: flex;
     padding: 20px;
     gap: 8px;
@@ -93,7 +96,7 @@ textarea{
     display: flex;
     background-color: #212529;
     border: 1px solid #CCCCCC;
-    border-radius: 8px;
+    border-radius: 5px;
     color: #CCCCCC;
     inline-size: 180px;
     block-size: 53px;
@@ -110,19 +113,19 @@ textarea{
     justify-content: flex-start;
     margin: 15px 40px;
     border: 1px solid white;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 5px;
-    gap: 45px;
+    gap: 5px;
 }
 .link{
     text-decoration: none;
     color:white;
-    margin: 10px 5px;
+    margin: 10px 20px;
 }
 .linkA{
     text-decoration: none;
     color:skyblue;
-    margin: 10px 5px;
+    margin: 10px 20px;
 }
 .link:hover:not(.active){
     color:aquamarine;

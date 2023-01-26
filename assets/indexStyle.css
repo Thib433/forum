@@ -10,14 +10,14 @@ body{
     block-size: 60px;
     background-color:#212529;
     border-style: none;
-    border-radius: 8px;
-    color: #CCCCCC;
+    border-radius: 5px;
+    color: white;
     justify-content: center;
     font-size: 18px;
     margin:20px 30px;
     align-items: center;
     text-decoration: none;
-    border: 1px solid #CCCCCC;
+    border: 1px solid white;
 }
 .add_index:hover{
     opacity: 0.8;
@@ -28,7 +28,7 @@ body{
 }
 .card_base{
     background-color: #212529;
-    border-radius: 7px;
+    border-radius: 5px;
     border: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ body{
     block-size: 50px;
     background-color:#212529;
     border-style: none;
-    border-radius: 7px;
+    border-radius: 5px;
     color:#CCCCCC;
     justify-content: center;
     font-size: 18px ;
@@ -69,7 +69,7 @@ body{
     block-size: 50px;
     background-color:#212529;
     border-style: none;
-    border-radius: 7px;
+    border-radius: 5px;
     color: #CCCCCC;
     justify-content: center;
     font-size: 18px ;
@@ -89,7 +89,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding:10px ;
-    
+    gap:5px;
 }
 .card_container{
     display: flex;
@@ -100,7 +100,7 @@ body{
     display: flex ;
     justify-content: space-between;
 }
-.objet{
+.ti{
     padding-bottom: 5px ;
     padding:10px ;
 }
@@ -123,7 +123,7 @@ body{
 }
 textarea{
     background-color: #9B9B9B ;
-    border-radius: 7px ;
+    border-radius: 5px ;
     padding : 15px ;
     min-height: 200px ;
     border-style:hidden ;
@@ -145,19 +145,19 @@ label{
     justify-content: flex-start;
     margin: 15px 40px;
     border: 1px solid white;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 5px;
-    gap: 45px;
+    gap: 5px;
 }
 .link{
     text-decoration: none;
     color:white;
-    margin: 10px 5px;
+    margin: 10px 20px;
 }
 .linkA{
     text-decoration: none;
     color:skyblue;
-    margin: 10px 5px;
+    margin: 10px 20px;
 }
 .link:hover:not(.active){
     color:aquamarine;
